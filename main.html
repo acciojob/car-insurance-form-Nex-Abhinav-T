@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
 <meta charset="UTF-8">
 <meta name="viewport" width="device-width,initial-scale=1.0">
 <title>Car Insurance Registration Form </title>
@@ -11,33 +10,33 @@
 
 
 <body>
-<form>
+<form method="post">
 <label for="name">Name:</label>
 <input type="text" id="name" name="name" placeholder="name" required><br><br>
 <label for="email">Email:</label>
 <input type="email" id="email" name="email" placeholder="email" required><br><br>
 <label >Gender:</label><br>
-<input type="radio" value="Male" name="Gender">:Male.<br>
-<input type="radio" value="Female" name="Gender">:Female.<br>
-<input type="radio" value="Non Binary" name="Gender">:Non Binary.<br>
-<input type="radio" value="Prefer not to say" name="Gender">:Prefer not to say.<br>
-<input type="radio" value="Prefer to self describe" name="Gender">:Prefer to self describe.<br><br>
+<input type="radio" value="Male" name="gender">:Male.<br>
+<input type="radio" value="Female" name="gender">:Female.<br>
+<input type="radio" value="Non Binary" name="gender">:Non Binary.<br>
+<input type="radio" value="Prefer not to say" name="gender">:Prefer not to say.<br>
+<input type="radio" value="Prefer to self describe" name="gender">:Prefer to self describe.<br><br>
 <label for="cars">Car Brands:</label><br>
-<select multiple>
+<select  id="cars" name="cars" multiple>
 <option>BMW.</option>
 <option>Audi.</option>
 <option>Mercedez.</option>
 <option>Porsche.</option>
 </select><br><br>
-<label for="car_age">Car Age:</label>
-<input type="number" id="car_age" name="car_age" placeholder="Car Age" required><br><br>
+<label for="carage">Car Age:</label>
+<input type="number" id="carage" name="carage" placeholder="Car Age" required><br><br>
 <label for="dop">Date of Purchase:</label>
 <input type="date" id="dop" name="dop" required><br><br>
 <label for="password">Password:</label>
 <input type="Password" id="password" name="password" placeholder="password" required><br><br>
-<input type="button" value="Button">
+<button type="submit">Submit</button>
 </form>
-</table>
+
 
 </body>
 
